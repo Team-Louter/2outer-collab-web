@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>로그인</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <h2 class="login-title">로그인</h2>
+
+    <div class="container">
+      <input type="text" id="user-id" autocomplete="off" placeholder=" " class="form__input"/>
+      <label class="label" for="user-id">아이디를 입력하세요</label>
+    </div>
+
+    <div class="container">
+      <input type="password" id="user-password" autocomplete="off" placeholder=" " class="form__input"/>
+      <label class="label" for="user-password">비밀번호를 입력하세요</label>
+    </div>
+
+    <div class="options">
+      <label class="keep-login">
+        <input type="checkbox" />로그인 유지</label>
+      <a href="#">비밀번호를 잊어버리셨나요?</a>
+    </div>
+
+    <button class="form__button">로그인</button>
+
+    <div class="signup">
+      계정이 없으신가요? <a href="#">회원가입</a>
+    </div>
+  </div>
+</body>
+</html>
