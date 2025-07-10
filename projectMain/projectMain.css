@@ -55,6 +55,7 @@ header li {
     list-style: none;
     display: inline-block;
     margin-left: 15px;
+    font-size: 15px;
 }
 
 #container {
@@ -75,7 +76,7 @@ nav {
 
 #func {
     font-weight: 600;
-    font-size: larger;
+    font-size: 15px;
     padding: 20px 0px;
     width: 90%;
     text-align: center;
@@ -146,12 +147,14 @@ nav h4 {
     line-height: 13px;
 }
 
-.projectText h3 {
+.projectText h4 {
     margin: 0px;
     margin-right: auto;
 }
 
 .projectText span {
+    margin-top: 2px;
+    font-size: 16px;
     color: rgb(155, 155, 155);
 }
 
@@ -244,7 +247,7 @@ aside h3 {
     margin-left: 10px;
 }
 
-.info h3 {
+.info h4 {
     margin: 0px;
     font-weight: 600;
 }
@@ -273,20 +276,22 @@ main {
 #notice h6 {
     margin: 0px;
     position: absolute;
-    top: 18px;
+    top: 15px;
     left: 30px;
 }
 
 #notice h3 {
     position: absolute;
-    top: 23px;
+    top: 15px;
     left: 30px;
 }
 
 #notice .fi {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     right: 15px;
+    color: #4A85FF;
+    font-size: 20px;
 }
 
 #tool {
@@ -296,6 +301,11 @@ main {
     width: 80%;
     align-self: center;
     flex-wrap: wrap;
+}
+
+#tool a {
+    color: black;
+    text-decoration: none;
 }
 
 #Github, #Gpt, #Notion {
@@ -326,6 +336,7 @@ main {
 
 #Github p, #Gpt p, #Notion p {
     margin: 0px;
+    font-size: 13px;
 }
 
 #memo {
@@ -333,14 +344,15 @@ main {
     width: 80%;
     height: 50px;
     align-self: center;
-    margin-top: 30px;
+    margin-top: 15px;
     border-radius: 15px;
     border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    align-items: center;
 }
 
 #memo input {
     height: 35px;
-    margin-top: 8px;
     margin-left: 15px;
     font-size: 18px;
     border: 0px solid black;
@@ -353,4 +365,31 @@ main {
 
 #memo input::placeholder {
     font-size: 18px;
+}
+
+#memo button {
+    background-color: white;
+    border: 0px solid black;
+    font-size: 35px;
+    color: #4A85FF;
+}
+
+#memo .fi {
+    font-size: 20px;
+    margin-left: 4px;
+    color: #4A85FF;
+    margin-top: 5px
+}
+
+#calender {
+    background-color: white;
+    width: 30vw;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-left: 10%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
