@@ -54,7 +54,7 @@ body {
 }
 
 .form__input:focus {
-  border: 2px solid #4a85ff;
+  border: 2px solid #4A85FF;
 }
 
 input::placeholder {
@@ -80,6 +80,12 @@ input::placeholder {
   color: #000000;
 }
 
+.form__input:focus ~ label,
+.form__input:not(:placeholder-shown) ~ label {
+  color: #4A85FF;
+}
+
+
 .options {
   width: 100%;
   display: flex;
@@ -103,7 +109,7 @@ input::placeholder {
 .form__button {
   width: 100%;
   padding: 0.9rem;
-  background: #4a85ff;
+  background: #4A85FF;
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -124,7 +130,7 @@ input::placeholder {
 
 .signup a {
   text-decoration: none;
-  color: #4a85ff;
+  color: #4A85FF;
   font-weight: bold;
 }
 
@@ -152,5 +158,5 @@ margin-left: 0.3rem;
 }
 
 .keep-login input[type="checkbox"]:checked {
-  background-color: #4a85ff;
+  background-color: #4A85FF;
 }
