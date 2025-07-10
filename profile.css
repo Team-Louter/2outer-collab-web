@@ -1,0 +1,445 @@
+header {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header input {
+  height: 25px;
+  width: 25vw;
+  margin-top: 5px;
+  border-radius: 50px;
+  border: 0px solid black;
+  background-color: rgb(242, 242, 242);
+  padding-left: 25px;
+  background-image: url("search.png");
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+header input:focus {
+  outline: 0px;
+}
+
+header .fi {
+  font-size: 20px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  margin-left: 3ch;
+}
+
+#logo {
+  margin: 0px;
+}
+
+#logo img {
+  width: 110px;
+  align-self: center;
+  padding-bottom: 4px;
+  margin-left: 3px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+  padding-bottom: 10px;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#container {
+  display: flex;
+}
+
+nav {
+  width: 250px;
+  height: 93vh;
+  background-color: rgb(255, 255, 255);
+  border-right: 1px solid rgb(230, 230, 230);
+  border-top: 1px solid rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  order: 1;
+}
+
+#func {
+  font-weight: 600;
+  font-size: larger;
+  padding: 20px 0px;
+  width: 90%;
+  text-align: center;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+#func .fi {
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin-left: 20px;
+  align-self: flex-start;
+  font-size: 15px;
+  width: 90%;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+nav .fi {
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav h4 {
+  margin: 15px;
+  align-self: start;
+}
+
+#my-project {
+  width: 90%;
+  height: 450px;
+  overflow-y: auto;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#my-project div {
+  display: flex;
+  align-items: center;
+}
+
+#my-project img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #4a85ff;
+}
+
+.projectText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  line-height: 13px;
+}
+
+.projectText h3 {
+  margin: 0px;
+  margin-right: auto;
+}
+
+.projectText span {
+  color: rgb(155, 155, 155);
+}
+
+nav [type="checkbox"] {
+  appearance: none;
+  position: relative;
+  border: 1px solid rgb(210, 210, 210);
+  background-color: rgb(210, 210, 210);
+  border-radius: 10px;
+  width: 25px;
+  height: 13px;
+}
+
+nav [type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0.8);
+  background-color: white;
+  transition: left 250ms linear;
+}
+
+nav [type="checkbox"]:checked {
+  background-color: #0086f8;
+  border-color: #0086f8;
+}
+
+nav [type="checkbox"]:checked::before {
+  background-color: white;
+  left: 12px;
+}
+
+#option input {
+  position: relative;
+  top: 4px;
+}
+
+#option {
+  align-self: flex-start;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+}
+
+#option .fi,
+#logout .fi {
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+#logout {
+  align-self: flex-start;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: auto;
+}
+
+aside {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  border-left: 1px solid rgb(230, 230, 230);
+  border-top: 1px solid rgb(230, 230, 230);
+  order: 3;
+}
+
+aside h3 {
+  margin: 15px;
+}
+
+.info {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.info .fi {
+  font-size: 30px;
+}
+
+.info div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.info h3 {
+  margin: 0px;
+  font-weight: 600;
+}
+
+main {
+  width: 100%;
+  background-color: aliceblue;
+  border-top: 1px solid rgb(230, 230, 230);
+  order: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 10px;
+}
+
+.profileTopContainer {
+  width: 76%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.profileEditText {
+  font-size: 28px;
+  margin-left: 20px;
+}
+
+.profileContainer {
+  width: 76%;
+  height: 64%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.profile {
+  padding: 20px;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.profileImage {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.profileInfoBox1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profileNameText {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.profileNameInputBox {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+
+.profileNameInput {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.profileRoleText {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.profileRoleInputBox {
+  width: 100%;
+  height: 50px;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.profileRoleInput:hover {
+  cursor: not-allowed;
+}
+
+.profileRoleInput {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  color: #ababab;
+}
+
+.profileInfoBox {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileInfoBox2 {
+  width: 100%;
+  height: 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profileDesText {
+  font-size: 20px;
+  margin-bottom: 2px;
+  height: 16%;
+  display: flex;
+  align-items: center;
+}
+
+.profileDesBox {
+  width: 100%;
+  height: 64%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.profileDesInput {
+  width: 96%;
+  height: 80%;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+}
+
+.profileEditButtonBox {
+  width: 100%;
+  height: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.profile_cancleButton {
+  width: 100px;
+  height: 32px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.profile_saveButton {
+  width: 100px;
+  height: 32px;
+  background-color: #4a85ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.profile_saveButton:hover {
+  background-color: #3b6ad4;
+  cursor: pointer;
+}
+
+.profile_cancleButton:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
