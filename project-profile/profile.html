@@ -122,7 +122,7 @@
         </nav>
         <main>
             <div class="profileTopContainer">
-                <div class="profileEditText">서버 프로필</div>
+                <div class="profileEditText">프로젝트 프로필</div>
                 <select class="profileServerSelect">
                     <option value="Louter">Louter</option>
                     <option value="B1ND">B1ND</option>
@@ -133,29 +133,24 @@
             <div class="profileContainer">
                 <div class="profileInfoBox1">
                     <div class="profile">
-                        <img src="/server-profile/profile.png" alt="프로필 사진" , class="profileImage">
+                        <img src="profile.png" alt="프로필 사진" , class="profileImage">
+                        <img src="edit.png" alt="프로필 사진 수정" class="profileEditImage">
                     </div>
-                    <div class="profileInfoBox">
-                        <div class="profileNameText">닉네임</div>
-                        <div class="profileNameInputBox">
-                            <input class="profileNameInput" type="text" placeholder="이름을 입력하세요" value="username">
+                    <div class="profileInfoContainer">
+                        <div class="profileInfoBox">
+                            <div class="profileNameText">프로젝트명</div>
+                            <div class="profileNameInputBox">
+                                <input class="profileNameInput" type="text" placeholder="이름을 입력하세요" value="username">
+                            </div>
+                            <div class="profileDesText">프로젝트 설명</div>
+                            <div class="profileDesBox">
+                                <textarea placeholder="소개글을 입력해주세요." class="profileDesInput"></textarea>
+                            </div>
                         </div>
-                        <div class="profileRoleText">역할</div>
-                        <div class="profileRoleInputBox">
-                            <input readonly class="profileRoleInput" type="text" placeholder="이름을 입력하세요" value="멤버">
+                        <div class="profileEditButtonBox">
+                            <button class="profile_cancleButton">취소</button>
+                            <button class="profile_saveButton">저장</button>
                         </div>
-                    </div>
-                </div>
-
-                <div class="profileInfoBox2">
-                    <div class="profileDesText">설명</div>
-                    <div class="profileDesBox">
-                        <textarea placeholder="소개글을 입력해주세요." class="profileDesInput"></textarea>
-                    </div>
-
-                    <div class="profileEditButtonBox">
-                        <button class="profile_cancleButton">취소</button>
-                        <button class="profile_saveButton">저장</button>
                     </div>
                 </div>
             </div>
