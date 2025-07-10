@@ -222,41 +222,6 @@ nav [type="checkbox"]:checked::before {
   margin-top: auto;
 }
 
-aside {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  border-left: 1px solid rgb(230, 230, 230);
-  border-top: 1px solid rgb(230, 230, 230);
-  order: 3;
-}
-
-aside h3 {
-  margin: 15px;
-}
-
-.info {
-  display: flex;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-.info .fi {
-  font-size: 30px;
-}
-
-.info div {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-}
-
-.info h3 {
-  margin: 0px;
-  font-weight: 600;
-}
-
 main {
   width: 100%;
   background-color: aliceblue;
@@ -296,18 +261,39 @@ main {
   border-radius: 50%;
   width: 140px;
   height: 140px;
-  overflow: hidden;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
+  position: relative;
 }
 
 .profileImage {
   width: 60%;
   height: 60%;
   object-fit: cover;
+}
+
+#edit {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#edit .fi {
+  padding-top: 5px;
+  font-size: 20px;
+  color: gray;
 }
 
 .profileInfoBox1 {
