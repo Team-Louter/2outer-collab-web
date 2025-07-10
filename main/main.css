@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 /* 헤더 */
 header {
     width: 100%;
@@ -56,6 +60,7 @@ header li {
     list-style: none;
     display: inline-block;
     margin-left: 15px;
+    font-size: 15px;
 }
 
 #container {
@@ -75,7 +80,7 @@ aside {
 
 #func {
     font-weight: 600;
-    font-size: larger;
+    font-size: 15px;
     padding: 20px 0px;
     width: 90%;
     text-align: center;
@@ -124,13 +129,15 @@ aside h4 {
     line-height: 13px;
 }
 
-.projectText h3 {
+.projectText h4 {
     margin: 0px;
     margin-right: auto;
 }
 
 .projectText span {
     color: rgb(155, 155, 155);
+    font-size: 16px;
+    margin-top: 2px;
 }
 
 aside [type="checkbox"] {
@@ -203,6 +210,7 @@ main {
     line-height: 30px;
     text-align: center;
     text-decoration: underline;
+    font-size: 13px;
 }
 
 #ad {
@@ -299,6 +307,7 @@ main h1 {
     font-weight: 350;
     margin-left: 20px;
     line-height: 23px;
+    font-size: 13px;
 }
 
 .join {
