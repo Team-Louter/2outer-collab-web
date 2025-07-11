@@ -294,8 +294,8 @@ main {
 .profile {
   padding: 20px;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 0 45px;
   background-color: white;
   display: flex;
@@ -343,7 +343,7 @@ main {
 
 .profileNameInputBox {
   width: 100%;
-  height: 55px;
+  height: 45px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -364,34 +364,8 @@ main {
   outline: none;
 }
 
-.profileRoleText {
-  font-size: 20px;
-  margin-bottom: 2px;
-}
-
-.profileRoleInputBox {
-  width: 100%;
-  height: 50px;
-  background-color: #efefef;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
-
 .profileRoleInput:hover {
   cursor: not-allowed;
-}
-
-.profileRoleInput {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  border: none;
-  padding-left: 10px;
-  font-size: 16px;
-  outline: none;
-  color: #ababab;
 }
 
 .profileInfoBox {
