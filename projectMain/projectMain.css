@@ -1,0 +1,466 @@
+body {
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header input {
+    height: 25px;
+    width: 25vw;
+    margin-top: 5px;
+    border-radius: 50px;
+    border: 0px solid black;
+    background-color: rgb(242, 242, 242);
+    padding-left: 25px;
+    background-image: url('search.png');
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+header input:focus {
+    outline: 0px;
+}
+
+header .fi {
+    font-size: 20px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    margin-left: 3ch;
+}
+
+#logo {
+    margin: 0px;
+}
+
+#logo img {
+    width: 110px;
+    align-self: center;
+    padding-bottom: 4px;
+    margin-left: 3px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    padding-bottom: 10px;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+#container {
+    display: flex;
+}
+
+nav {
+    width: 250px;
+    height: 93vh;
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid rgb(230, 230, 230);
+    border-top: 1px solid rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    order: 1;
+}
+
+#func {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 20px 0px;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+#func .fi {
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 20px;
+    align-self: flex-start;
+    font-size: 15px;
+    width: 90%;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+nav .fi {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav h4 {
+    margin: 15px;
+    align-self: start;
+}
+
+#my-project {
+    width: 90%;
+    height: 450px;
+    overflow-y: auto;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#my-project div {
+    display: flex;
+    align-items: center;
+}
+
+#my-project img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #4A85FF;
+}
+
+.projectText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    line-height: 13px;
+}
+
+.projectText h4 {
+    margin: 0px;
+    margin-right: auto;
+}
+
+.projectText span {
+    margin-top: 2px;
+    font-size: 16px;
+    color: rgb(155, 155, 155);
+}
+
+nav [type="checkbox"] {
+    appearance: none;
+    position: relative;
+    border: 1px solid rgb(210, 210, 210);
+    background-color: rgb(210, 210, 210);
+    border-radius: 10px;
+    width: 25px;
+    height: 13px;
+}
+  
+nav [type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(0.8);
+    background-color: white;
+    transition: left 250ms linear;
+}
+  
+nav [type="checkbox"]:checked {
+    background-color: #0086F8;
+    border-color: #0086F8;
+}
+  
+nav [type="checkbox"]:checked::before {
+    background-color: white;
+    left: 12px;
+}
+
+#option input {
+    position: relative;
+    top: 4px;
+}
+
+#option {
+    align-self: flex-start;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+
+#option .fi, #logout .fi {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+#logout {
+    align-self: flex-start;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: auto;
+}
+
+aside {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    border-left: 1px solid rgb(230, 230, 230);
+    border-top: 1px solid rgb(230, 230, 230);
+    order: 3;
+}
+
+aside h3 {
+    margin: 15px;
+}
+
+.info {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.info .fi {
+    font-size: 30px;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.info h4 {
+    margin: 0px;
+    font-weight: 600;
+}
+
+
+main {
+    width: 100%;
+    height: 750px;
+    overflow-y: scroll;
+    background-color: aliceblue;
+    border-top: 1px solid rgb(230, 230, 230);
+    order: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#notice {
+    background-color: white;
+    width: 80%;
+    min-height: 70px;
+    align-self: center;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    position: relative;
+}
+
+#notice h6 {
+    margin: 0px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+#notice h3 {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+#notice .fi {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    color: #4A85FF;
+    font-size: 20px;
+}
+
+#tool {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    width: 80%;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+#tool a {
+    color: black;
+    text-decoration: none;
+}
+
+#Github, #Gpt, #Notion {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Github .fi {
+    font-size: 25px;
+}
+
+#Gpt img {
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+#Notion img {
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+#Github p, #Gpt p, #Notion p {
+    margin: 0px;
+    font-size: 13px;
+}
+
+#memo {
+    background-color: white;
+    width: 80%;
+    height: 50px;
+    align-self: center;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    align-items: center;
+}
+
+#memo input {
+    height: 35px;
+    margin-left: 15px;
+    font-size: 18px;
+    border: 0px solid black;
+    width: 90%;
+}
+
+#memo input:focus {
+    outline: none;
+}
+
+#memo input::placeholder {
+    font-size: 18px;
+}
+
+#memo button {
+    background-color: white;
+    border: 0px solid black;
+    font-size: 35px;
+    color: #4A85FF;
+}
+
+#memo .fi {
+    font-size: 20px;
+    margin-left: 4px;
+    color: #4A85FF;
+    margin-top: 5px
+}
+
+#schedule {
+    display: flex;
+    align-self: center;
+    gap: 20px;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#calender, #calenderContent {
+    background-color: white;
+    width: 410px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calenderContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#calenderContent p {
+    margin-left: 30px;
+}
+
+#calenderContent span {
+    background-color: #4a86ff56;
+}
+
+#row {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    gap: 20px;
+}
+
+#report {
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#minutes {
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#minutes p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 93%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
