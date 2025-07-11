@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.form-wrapper {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #4A85FF, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 3.2em;
+  position: relative;
+}
+
+.form__input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 2em;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form__input:hover {
+  border-color: gray;
+}
+
+.form__input:focus {
+  border: 2px solid #4a85ff;
+}
+
+.label {
+  position: absolute;
+  left: 1em;
+  top: 35%;
+  color: #888;
+  background: white;
+  padding: 0 0.3em;
+  transition: 0.3s ease;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.form__input:focus ~ label,
+.form__input:not(:placeholder-shown) ~ label {
+  top: -0.6em;
+  font-size: 0.75rem;
+  color: #4a85ff;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.options a {
+  text-decoration: none;
+  color: #555;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.form__button {
+  width: 100%;
+  padding: 0.9rem;
+  background: #4a85ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form__button:hover {
+  background: #3a6edc;
+}
+
+.signup {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #4a85ff;
+  font-weight: bold;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.keep-login {
+margin-left: 0.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.3rem;
+}
+
+.keep-login input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%; /* 동그랗게 */
+  appearance: none;      /* 기본 체크박스 스타일 제거 */
+  border: 1.5px solid gray;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+}
+
+.keep-login input[type="checkbox"]:checked {
+  background-color: #4a85ff;
+}
