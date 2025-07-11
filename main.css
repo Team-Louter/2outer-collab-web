@@ -465,8 +465,13 @@ main {
 }
 
 .cbox h1, h3 {
-    text-align: center;
-    margin: 50px 500px;
+  text-align: center;
+  margin: 50px 500px;
+  color: #0053FF;
+}
+
+.cbox h1 {
+  width: 200px;
 }
 
 .cbox th {
@@ -511,11 +516,7 @@ main {
     line-height: normal;
 }
 
-h1, tbody {
+.cbox h1, tbody {
   border-radius: 100px;
   background-color: #FFFFFF;
-}
-
-h1 {
-  width: 200px;
 }
