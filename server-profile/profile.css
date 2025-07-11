@@ -1,6 +1,6 @@
-body {
+/* body {
   overflow: hidden;
-}
+} */
 
 header {
   width: 100%;
@@ -66,7 +66,7 @@ header li {
   display: flex;
 }
 
-nav {
+aside {
   width: 250px;
   height: 93vh;
   background-color: rgb(255, 255, 255);
@@ -93,7 +93,7 @@ nav {
   top: 3px;
 }
 
-nav ul {
+aside ul {
   list-style: none;
   padding: 0px;
   margin-left: 20px;
@@ -105,17 +105,17 @@ nav ul {
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
-nav .fi {
+aside .fi {
   margin-right: 5px;
   position: relative;
   top: 2px;
 }
 
-nav li {
+aside li {
   margin-bottom: 10px;
 }
 
-nav h4 {
+aside h4 {
   margin: 15px;
   align-self: start;
 }
@@ -162,7 +162,7 @@ nav h4 {
   font-size: 13px;
 }
 
-nav [type="checkbox"] {
+aside [type="checkbox"] {
   appearance: none;
   position: relative;
   border: 1px solid rgb(210, 210, 210);
@@ -172,7 +172,7 @@ nav [type="checkbox"] {
   height: 13px;
 }
 
-nav [type="checkbox"]::before {
+aside [type="checkbox"]::before {
   content: "";
   position: absolute;
   left: 0;
@@ -184,12 +184,12 @@ nav [type="checkbox"]::before {
   transition: left 250ms linear;
 }
 
-nav [type="checkbox"]:checked {
+aside [type="checkbox"]:checked {
   background-color: #0086f8;
   border-color: #0086f8;
 }
 
-nav [type="checkbox"]:checked::before {
+aside [type="checkbox"]:checked::before {
   background-color: white;
   left: 12px;
 }
@@ -222,6 +222,23 @@ nav [type="checkbox"]:checked::before {
   margin-top: auto;
 }
 
+nav {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 50px;
+}
+
+nav p {
+  display: inline-block;
+  margin-left: 50px;
+  border-bottom: 1px solid #4a85ff;
+}
+
+nav span {
+  color: gray;
+  margin-left: 80px;
+}
+
 main {
   width: 100%;
   background-color: aliceblue;
@@ -230,7 +247,6 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
   gap: 10px;
 }
 
