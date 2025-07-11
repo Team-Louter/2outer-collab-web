@@ -274,14 +274,28 @@ main {
 .profile {
   padding: 20px;
   border-radius: 50%;
-  width: 140px;
-  height: 140px;
-  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: 0 45px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
+  position: relative;
+}
+
+.profileEditImage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
 
 .profileImage {
