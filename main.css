@@ -445,3 +445,77 @@ main {
   padding: 5px 10px;
   font-size: 12px;
 }
+
+.calendar-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cbox {
+  order: 2;
+  background-color: aliceblue;
+}
+
+.cbox table {
+    border-spacing: 100px 25px;
+    text-align: center;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+.cbox h1, h3 {
+    text-align: center;
+    margin: 50px 500px;
+}
+
+.cbox th {
+    border: 1px solid #BFD4FF;
+    height: 30px;
+    width: 200px;
+    background-color: #FFFFFF;
+}
+
+.cbox hr {
+    border-top: 2px dotted lightslategray;
+}
+
+.cbox td {
+    height: 100px;
+    border: 1px double #BFD4FF;
+    text-align: left;
+    vertical-align: top;
+}
+
+.cbox .Ttext {
+    color: blue;
+}
+
+.cbox .Stext {
+    color: red;
+}
+
+.cbox ul {
+    padding-left: 10px;
+}
+
+.cbox ul li {
+    top: 14px;
+    left: 526px;
+    color: #000000;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: "Pretendard-Bold", Helvetica;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+h1, tbody {
+  border-radius: 100px;
+  background-color: #FFFFFF;
+}
+
+h1 {
+  width: 200px;
+}
