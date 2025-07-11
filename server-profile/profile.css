@@ -275,14 +275,28 @@ main {
 .profile {
   padding: 20px;
   border-radius: 50%;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
+  margin: 0 40px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
   position: relative;
+}
+
+.profileEditImage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
 
 .profileImage {
@@ -319,13 +333,13 @@ main {
 }
 
 .profileNameText {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 2px;
 }
 
 .profileNameInputBox {
   width: 100%;
-  height: 50px;
+  height: 45px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -345,13 +359,13 @@ main {
 }
 
 .profileRoleText {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 2px;
 }
 
 .profileRoleInputBox {
   width: 100%;
-  height: 50px;
+  height: 45px;
   background-color: #efefef;
   display: flex;
   align-items: center;
@@ -389,7 +403,7 @@ main {
 }
 
 .profileDesText {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 2px;
   height: 16%;
   display: flex;
@@ -416,6 +430,10 @@ main {
   outline: none;
   background-color: transparent;
   resize: none;
+}
+
+.profileDesInput::placeholder {
+  color: #ccc;
 }
 
 .profileEditButtonBox {
